@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bgG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0d0d"/>
+      <stop offset="1" stop-color="#181028"/>
+    </linearGradient>
+    <linearGradient id="txtG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="0.5" stop-color="#00FFF7"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+      <animate attributeName="x1" values="-1;1" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="4.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#00FFF7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00FFF7" stop-opacity="0.32"/>
+      <stop offset="0.5" stop-color="#8B5CF6" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#00FFF7" stop-opacity="0.32"/>
+    </linearGradient>
+    <radialGradient id="moonG" cx="0.35" cy="0.35" r="0.9">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#E9D5FF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </radialGradient>
+    <filter id="glowBig" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowSoft" x="-40%" y="-60%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="260" rx="28" fill="url(#bgG)"/>
+
+  <g>
+    <path d="M0,205 C120,175 240,235 360,200 C480,165 600,235 720,200 C840,165 960,235 1080,200 C1140,180 1175,192 1200,185 L1200,260 L0,260 Z" fill="url(#w1)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-25,0;0,0" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,225 C120,195 240,255 360,220 C480,185 600,255 720,220 C840,185 960,255 1080,220 C1140,200 1175,212 1200,205 L1200,260 L0,260 Z" fill="url(#w2)">
+      <animateTransform attributeName="transform" type="translate" values="-25,0;0,0;-25,0" dur="11s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g>
+    <circle cx="1030" cy="85" r="95" fill="#8B5CF6" opacity="0.25" filter="url(#glowBig)"/>
+    <circle cx="1030" cy="85" r="58" fill="url(#moonG)"/>
+    <circle cx="1012" cy="68" r="48" fill="#141022"/>
+  </g>
+
+  <text x="600" y="135" text-anchor="middle" font-family="Orbitron, 'Trebuchet MS', Verdana, sans-serif" font-size="78" font-weight="900" letter-spacing="3" fill="url(#txtG)" filter="url(#glowBig)">LUNA BOT V6</text>
+  <text x="600" y="185" text-anchor="middle" font-family="'Segoe UI', Verdana, sans-serif" font-size="26" font-style="italic" fill="#00FFF7" filter="url(#glowSoft)">El Bot de WhatsApp más completo y poderoso</text>
+
+  <g>
+    <path d="M140,100 L144,113 L157,117 L144,121 L140,134 L136,121 L123,117 L136,113 Z" fill="#00FFF7">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="0s" repeatCount="indefinite"/>
+    </path>
+    <path d="M320,72 L323,82 L333,85 L323,88 L320,98 L317,88 L307,85 L317,82 Z" fill="#8B5CF6">
+      <animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="0.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M470,218 L473,227 L482,230 L473,233 L470,242 L467,233 L458,230 L467,227 Z" fill="#C4B5FD">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M705,60 L708,68 L716,71 L708,74 L705,82 L702,74 L694,71 L702,68 Z" fill="#00FFF7">
+      <animate attributeName="opacity" values="0;0.9;0" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M880,150 L882,157 L889,159 L882,161 L880,168 L878,161 L871,159 L878,157 Z" fill="#8B5CF6">
+      <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M450,48 L453,57 L462,60 L453,63 L450,72 L447,63 L438,60 L447,57 Z" fill="#E9D5FF">
+      <animate attributeName="opacity" values="0;1;0" dur="2.8s" begin="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
