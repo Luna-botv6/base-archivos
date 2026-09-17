@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="70" viewBox="0 0 920 70">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00FFF7"/>
+      <stop offset="0.5" stop-color="#E9D5FF"/>
+      <stop offset="1" stop-color="#00FFF7"/>
+      <animate attributeName="x1" values="-1;1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="sglow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="460" y="42" text-anchor="middle" font-family="'Segoe UI', Verdana, sans-serif" font-size="20" font-style="italic" fill="url(#sg)" filter="url(#sglow)">Administrá a Luna desde un panel central: grupos, usuarios, comandos y mucho más.</text>
+</svg>
