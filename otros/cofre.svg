@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="640" viewBox="0 0 1024 640" role="img" aria-label="Cofre diario">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#251546"/>
+      <stop offset="0.55" stop-color="#160d2e"/>
+      <stop offset="1" stop-color="#0a0618"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.64" r="0.55">
+      <stop offset="0" stop-color="#ffd76a" stop-opacity="0.58"/>
+      <stop offset="0.45" stop-color="#ffb43c" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffb43c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6d2"/>
+      <stop offset="0.34" stop-color="#ffd24d"/>
+      <stop offset="0.66" stop-color="#e0a020"/>
+      <stop offset="1" stop-color="#a86a12"/>
+    </linearGradient>
+    <linearGradient id="goldEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe9a3"/>
+      <stop offset="0.5" stop-color="#e0a827"/>
+      <stop offset="1" stop-color="#8a5410"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a4a22"/>
+      <stop offset="0.5" stop-color="#5a3418"/>
+      <stop offset="1" stop-color="#2f1a0b"/>
+    </linearGradient>
+    <linearGradient id="woodLid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#955c2a"/>
+      <stop offset="1" stop-color="#4a2a12"/>
+    </linearGradient>
+    <radialGradient id="mouth" cx="0.5" cy="0.2" r="0.9">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#2a1406"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#ffd15c" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffd15c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gemCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a8fbff"/>
+      <stop offset="1" stop-color="#1899d6"/>
+    </linearGradient>
+    <radialGradient id="coin" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff4c8"/>
+      <stop offset="0.55" stop-color="#ffcf4d"/>
+      <stop offset="1" stop-color="#c8890f"/>
+    </radialGradient>
+    <filter id="blurSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="blurBig" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <path id="spark" d="M0,-1 L0.2,-0.2 L1,0 L0.2,0.2 L0,1 L-0.2,0.2 L-1,0 L-0.2,-0.2 Z"/>
+    <g id="coinG">
+      <circle r="16" fill="url(#coin)"/>
+      <circle r="16" fill="none" stroke="#a86a12" stroke-width="2" opacity="0.8"/>
+      <circle r="10.5" fill="none" stroke="#fff2bd" stroke-width="1.4" opacity="0.85"/>
+      <use href="#spark" transform="scale(7)" fill="#fff6d2" opacity="0.9"/>
+    </g>
+    <g id="gemG">
+      <polygon points="0,-18 15,0 0,18 -15,0" fill="url(#gemCyan)"/>
+      <polygon points="0,-18 15,0 0,0" fill="#ffffff" opacity="0.35"/>
+      <polygon points="0,0 15,0 0,18" fill="#0b4a6e" opacity="0.35"/>
+    </g>
+  </defs>
+
+  <rect width="1024" height="640" fill="url(#bg)"/>
+
+  <g opacity="0.5">
+    <circle cx="150" cy="120" r="2.4" fill="#fff"/>
+    <circle cx="880" cy="90" r="3" fill="#fff"/>
+    <circle cx="780" cy="212" r="2" fill="#fff"/>
+    <circle cx="250" cy="240" r="2.6" fill="#fff"/>
+    <circle cx="960" cy="330" r="2.2" fill="#fff"/>
+    <circle cx="90" cy="380" r="2.8" fill="#fff"/>
+    <circle cx="330" cy="96" r="1.8" fill="#fff"/>
+    <circle cx="700" cy="74" r="2" fill="#fff"/>
+    <circle cx="520" cy="64" r="2.4" fill="#fff"/>
+  </g>
+
+  <ellipse cx="512" cy="424" rx="350" ry="220" fill="url(#glow)" filter="url(#blurBig)"/>
+
+  <polygon points="404,408 620,408 706,168 318,168" fill="url(#beam)" filter="url(#blurSoft)"/>
+
+  <ellipse cx="512" cy="526" rx="188" ry="22" fill="#000000" opacity="0.42" filter="url(#blurSoft)"/>
+
+  <g transform="translate(372,354) rotate(-30 0 54)">
+    <path d="M0,54 L0,26 Q0,3 33,3 L247,3 Q280,3 280,26 L280,54 Z" fill="url(#woodLid)" stroke="#2a1608" stroke-width="3"/>
+    <path d="M2,50 L278,50" stroke="url(#goldEdge)" stroke-width="13" opacity="0.95"/>
+    <circle cx="30" cy="30" r="5" fill="#ffe9a3" opacity="0.85"/>
+    <circle cx="250" cy="30" r="5" fill="#ffe9a3" opacity="0.85"/>
+  </g>
+
+  <ellipse cx="512" cy="414" rx="140" ry="26" fill="url(#mouth)"/>
+  <ellipse cx="512" cy="414" rx="140" ry="26" fill="none" stroke="url(#goldEdge)" stroke-width="4" opacity="0.8"/>
+
+  <g>
+    <rect x="372" y="414" width="280" height="106" rx="14" fill="url(#wood)"/>
+    <rect x="372" y="414" width="280" height="106" rx="14" fill="none" stroke="#2a1608" stroke-width="3"/>
+    <g stroke="#3a1f0e" stroke-width="2" opacity="0.5">
+      <line x1="432" y1="420" x2="432" y2="514"/>
+      <line x1="512" y1="420" x2="512" y2="514"/>
+      <line x1="592" y1="420" x2="592" y2="514"/>
+    </g>
+    <rect x="372" y="414" width="280" height="16" fill="url(#goldEdge)"/>
+    <rect x="372" y="502" width="280" height="16" fill="url(#goldEdge)"/>
+    <rect x="372" y="414" width="280" height="16" fill="none" stroke="#8a5410" stroke-width="1.5"/>
+    <rect x="372" y="502" width="280" height="16" fill="none" stroke="#8a5410" stroke-width="1.5"/>
+    <rect x="372" y="414" width="18" height="106" fill="url(#goldEdge)" opacity="0.85"/>
+    <rect x="634" y="414" width="18" height="106" fill="url(#goldEdge)" opacity="0.85"/>
+  </g>
+
+  <g>
+    <rect x="486" y="444" width="52" height="50" rx="10" fill="url(#gold)"/>
+    <rect x="486" y="444" width="52" height="50" rx="10" fill="none" stroke="#8a5410" stroke-width="2.5"/>
+    <circle cx="512" cy="467" r="10" fill="#3a1f0e"/>
+    <rect x="507.5" y="467" width="9" height="15" rx="4" fill="#3a1f0e"/>
+  </g>
+
+  <use href="#coinG" transform="translate(456,470) scale(1.2)"/>
+  <use href="#coinG" transform="translate(508,438) scale(1.35)"/>
+  <use href="#coinG" transform="translate(566,470) scale(1.15)"/>
+  <use href="#coinG" transform="translate(600,398) scale(1.0)"/>
+  <use href="#gemG" transform="translate(636,378) rotate(14) scale(1.05)"/>
+  <use href="#gemG" transform="translate(400,392) rotate(-16) scale(0.9)"/>
+
+  <g>
+    <use href="#spark" transform="translate(512,238) scale(20)" fill="#fff6d2" opacity="0.95"/>
+    <use href="#spark" transform="translate(424,300) scale(12)" fill="#ffe9a3" opacity="0.8"/>
+    <use href="#spark" transform="translate(624,290) scale(14)" fill="#fff6d2" opacity="0.85"/>
+    <use href="#spark" transform="translate(556,272) scale(9)" fill="#ffd24d" opacity="0.9"/>
+    <use href="#spark" transform="translate(470,500) scale(10)" fill="#fff6d2" opacity="0.7"/>
+    <use href="#spark" transform="translate(600,506) scale(8)" fill="#ffe9a3" opacity="0.7"/>
+    <use href="#spark" transform="translate(512,360) scale(11)" fill="#ffd24d" opacity="0.85"/>
+  </g>
+
+  <rect width="1024" height="640" fill="url(#vignette)"/>
+
+  <text x="512" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="bold" letter-spacing="14" fill="url(#gold)">COFRE DIARIO</text>
+  <text x="512" y="148" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="10" fill="#cdb98c" opacity="0.92">RECOMPENSA DIARIA</text>
+  <text x="512" y="606" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="12" fill="#cdb98c" opacity="0.7">L U N A   B O T</text>
+
+  <rect x="26" y="26" width="972" height="588" rx="22" fill="none" stroke="url(#goldEdge)" stroke-width="2" opacity="0.5"/>
+  <rect x="34" y="34" width="956" height="572" rx="18" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.06"/>
+</svg>
